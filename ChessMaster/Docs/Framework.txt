@@ -1,0 +1,21 @@
+﻿// Doel: Een game-engine ontwikkelen, met een "Standalone AI" (SAI), die op ieder intelligent 
+//		niveau kan spelen, zonder opgeslagen game-data te gebruiken als referentie. 
+
+/*
+	"Scan"-loop
+
+	Deze loop vindt plaats op ieder moment dat een speler (incl. npc) een stap heeft gezet. 
+	Reden hiervoor is omdat de scan een volledige kansen verdeling per stuk berekent en die 
+	data wordt ieder beurt opgeslagen. Met deze data kan het systeem feedback geven aan de speler
+	hoeveel kans die maakt om te winnen. 
+
+	Algorithme:
+	1. Posession-step, tel per speler (max. 2) hoeveel "gevulde"-cellen die bezit;
+		-> Maakt twee reference collections, per speler één;
+	2. 
+	3. Dominance-step, check welke speler de overhand heeft:
+
+	Idee:
+	- Het spel kan UI-feedback geven aan de speler(s);
+	- Per beurt kan de speler inzien met assistentie;
+*/
