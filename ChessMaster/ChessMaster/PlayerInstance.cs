@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChessMaster
+namespace ChessMaster.ChessMaster
 {
-    public class ChessBoard
+    public class PlayerInstance
     {
-        private int[,] _grid = new int[10, 10];
+        public string _name;
     }
 }

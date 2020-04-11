@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChessMaster
 {
-    public class ChessMaster
+    public class Game
     {
         public void Play()
         {

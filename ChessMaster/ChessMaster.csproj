@@ -43,12 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChessMaster\ChessBoard.cs" />
+    <Compile Include="ChessMaster\Board.cs" />
     <Compile Include="ChessMaster\ChessMaster.cs" />
     <Compile Include="ChessMaster\GridCell.cs" />
+    <Compile Include="ChessMaster\ChessPiece.cs" />
+    <Compile Include="ChessMaster\PlayerInstance.cs" />
     <Compile Include="Enum\Direction.cs" />
     <Compile Include="Enum\Orientation.cs" />
-    <Compile Include="Enum\pieceType.cs" />
+    <Compile Include="Enum\PieceType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -58,5 +60,6 @@
   <ItemGroup>
     <Content Include="Docs\Framework.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

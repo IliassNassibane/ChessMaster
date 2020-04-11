@@ -11,7 +11,7 @@
 
 	Algorithme:
 	1. Posession-step, tel per speler (max. 2) hoeveel "gevulde"-cellen die bezit;
-		-> Maakt twee reference collections, per speler één;
+	   -> Maakt twee reference collections, per speler één;
 	2. 
 	3. Dominance-step, check welke speler de overhand heeft:
 

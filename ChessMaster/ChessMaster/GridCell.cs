@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace ChessMaster.ChessMaster
 {
-    internal class GridCell
+    public class GridCell
     {
-        internal Enum.pieceType _filledType;
-        internal bool _side;
-        internal int _move;
+        public ChessPiece _chessPiece;
+        public bool _occupiedBy;
+        public int _moveSet;
     }
 }

@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace ChessMaster.Enum
 {
-    internal enum pieceType
+    public enum PieceType
     {
-        Empty,
         Pawn,
         Knight,
         Bishop,

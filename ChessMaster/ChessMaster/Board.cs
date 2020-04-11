@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChessMaster.Enum
+namespace ChessMaster
 {
-    public enum Orientation
+    public class Board
     {
-        None,
-        Straight,
-        Omni
+        public GridCell[,] _grid = new GridCell[8,8];
     }
 }
