@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ChessMaster.Enum;
 
 namespace ChessMaster
 {
@@ -10,6 +11,7 @@ namespace ChessMaster
     {
         public void Play()
         {
+            public GameType _gameType;
             /*
              * 1. Initieer de gameboard;
              * 2. Wacht op speler input;
@@ -18,6 +20,11 @@ namespace ChessMaster
              * 5. Verwerk AI reactie;
              * 6. Return to 1;
              */
+            
+            while()
+            {
+
+            }
         }//--> Gameloop
     }
 }

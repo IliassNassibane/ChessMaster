@@ -27,7 +27,7 @@ namespace ChessMaster.ChessMaster
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("The {0} of {1} {2}", this._piece.ToString(), this._player._name, 
+            sb.AppendFormat("The {0} {1}", this._piece.ToString(), 
                 this._alive ? "" : "is still on the board on position");
 
             return sb.ToString();

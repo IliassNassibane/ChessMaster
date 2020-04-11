@@ -49,6 +49,7 @@
     <Compile Include="ChessMaster\ChessPiece.cs" />
     <Compile Include="ChessMaster\PlayerInstance.cs" />
     <Compile Include="Enum\Direction.cs" />
+    <Compile Include="Enum\GameType.cs" />
     <Compile Include="Enum\Orientation.cs" />
     <Compile Include="Enum\PieceType.cs" />
     <Compile Include="Program.cs" />
@@ -60,6 +61,8 @@
   <ItemGroup>
     <Content Include="Docs\Framework.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="GameRules\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
