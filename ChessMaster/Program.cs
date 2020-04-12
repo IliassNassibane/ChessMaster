@@ -10,6 +10,7 @@ namespace ChessMaster
     {
         static void Main(string[] args)
         {
+
         }
     }
 }

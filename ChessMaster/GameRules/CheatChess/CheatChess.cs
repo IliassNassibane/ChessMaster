@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChessMaster.ChessMaster
+namespace ChessMaster.GameRules.CheatChess
 {
-    public class Board
+    public partial class CheatChess : IRulesSet
     {
-        public GridCell[,] _grid;
+
     }
 }

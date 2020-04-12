@@ -47,11 +47,17 @@
     <Compile Include="ChessMaster\ChessMaster.cs" />
     <Compile Include="ChessMaster\GridCell.cs" />
     <Compile Include="ChessMaster\ChessPiece.cs" />
-    <Compile Include="ChessMaster\PlayerInstance.cs" />
+    <Compile Include="ChessMaster\Player.cs" />
     <Compile Include="Enum\Direction.cs" />
     <Compile Include="Enum\GameType.cs" />
     <Compile Include="Enum\Orientation.cs" />
     <Compile Include="Enum\PieceType.cs" />
+    <Compile Include="GameRules\CheatChess\CheatChess_WinCondition.cs" />
+    <Compile Include="GameRules\CheatChess\CheatChess_SetUp.cs" />
+    <Compile Include="GameRules\CheatChess\CheatChess_MoveEvaluation.cs" />
+    <Compile Include="GameRules\CheatChess\CheatChess.cs" />
+    <Compile Include="GameRules\Classic\Classic.cs" />
+    <Compile Include="GameRules\RulesSet.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -62,7 +68,7 @@
     <Content Include="Docs\Framework.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="GameRules\" />
+    <Folder Include="System\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

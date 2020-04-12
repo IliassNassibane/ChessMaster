@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace ChessMaster.ChessMaster
 {
-    public class PlayerInstance
+    public class Player
     {
         public string _name;
         public int _playerID;
         public List<ChessPiece> _pieces;
 
-        public PlayerInstance(string name, int id)
+        public Player(string name, int id, List<ChessPiece> pieces)
         {
             this._name = name;
             this._playerID = id;
+            this._pieces = pieces;
         }
 
         public override string ToString()
