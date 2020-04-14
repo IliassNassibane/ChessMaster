@@ -9,9 +9,10 @@ namespace ChessMaster.GameRules.CheatChess
 {
     public partial class CheatChess : IRulesSet
     {
-        public bool WinConditionMet(Player player, Player opponent)
+        public bool WinConditionMet(Player player)
         {
-            return bool;
+            
+            return false; // TODO
         }
     }
 }

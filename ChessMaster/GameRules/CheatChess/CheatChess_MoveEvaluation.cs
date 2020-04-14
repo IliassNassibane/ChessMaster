@@ -10,7 +10,7 @@ namespace ChessMaster.GameRules.CheatChess
     {
         public void MoveEvaluation()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
     }
 }

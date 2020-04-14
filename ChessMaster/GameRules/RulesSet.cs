@@ -15,6 +15,6 @@ namespace ChessMaster.GameRules
 
         void MoveEvaluation();
 
-        bool WinConditionMet(Player player, Player opponent);
+        bool WinConditionMet(Player player);
     }
 }

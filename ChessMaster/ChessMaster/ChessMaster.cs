@@ -28,14 +28,29 @@ namespace ChessMaster
 
         public void PlayMatch()
         {
-            while(this._ruleset.WinConditionMet(this._player, this._opponent))
-            {
-                // TODO : Speler maakt een zet;
-                // 2) Zet wordt geévalueerd;
-                
-                if(this._ruleset.WinConditionMet(this._player, this._opponent))
-                {
+            Player player_1;
+            Player player_2;
 
+            if (CoinToss() == 1)
+            {
+                player_1 = this._player;
+                player_2 = this._opponent;
+            } else
+            {
+                player_2 = this._player;
+                player_1 = this._opponent;
+            }
+
+            while (this._ruleset.WinConditionMet(player_1) || this._ruleset.WinConditionMet(player_2))
+            {
+                // TODO : 1) Speler maakt een zet;
+                // 2) Zet wordt geévalueerd;
+                // 3) Volgende speler...;
+                this._ruleset.MoveEvaluation();
+                
+                if(this._ruleset.WinConditionMet(this._player))
+                {
+                    continue;
                 }
             }
         }
@@ -63,6 +78,13 @@ namespace ChessMaster
         {
             _player = new Player("Player", 1, _ruleset.SetUpPlayer());
             _opponent = new Player("Opponent", 2, _ruleset.SetUpPlayer());
+        }
+
+        public int CoinToss()
+        {
+            Random coin = new Random();
+
+            return coin.Next(1, 3);
         }
     }
 }

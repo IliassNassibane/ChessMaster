@@ -10,14 +10,16 @@ namespace ChessMaster.ChessMaster
     public class ChessPiece
     {
         public PieceType _piece;
-        public int[,] _movement;
+        public int[] _startPosition;
+        public List<CPMovement> _movements;
         public Orientation _orientation;
         public bool _alive;
 
-        public ChessPiece(PieceType piece, int[,] movement, Orientation orientation)
+        public ChessPiece(PieceType piece, int[] position, List<CPMovement> movements, Orientation orientation)
         {
             this._piece = piece;
-            this._movement = movement;
+            this._startPosition = position;
+            this._movements = movements;
             this._orientation = orientation;
             this._alive = true;
         }

@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="ChessMaster\Board.cs" />
     <Compile Include="ChessMaster\ChessMaster.cs" />
+    <Compile Include="ChessMaster\CPMovement.cs" />
     <Compile Include="ChessMaster\GridCell.cs" />
     <Compile Include="ChessMaster\ChessPiece.cs" />
     <Compile Include="ChessMaster\Player.cs" />
@@ -68,7 +69,8 @@
     <Content Include="Docs\Framework.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="System\" />
+    <Folder Include="System\Data\History\" />
+    <Folder Include="System\Data\Player\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
