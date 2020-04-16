@@ -64,13 +64,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Docs\Schemas\CM_DBSchema_Local_v1.0.drawio" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Docs\Framework.txt" />
-  </ItemGroup>
-  <ItemGroup>
+    <Folder Include="AI\AutoPlayer\" />
+    <Folder Include="AI\Predict\" />
+    <Folder Include="Docs\Queries\" />
     <Folder Include="System\Data\History\" />
     <Folder Include="System\Data\Player\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Docs\Schemas\CM_DBSchema_Local_v1.0.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

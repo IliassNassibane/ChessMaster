@@ -69,14 +69,14 @@ namespace ChessMaster.GameRules.CheatChess
 
             List<CPMovement> kingMovements = new List<CPMovement>
             {
-                new CPMovement(new int[] { 1, -1 }, true),
-                new CPMovement(new int[] { -1, 1 }, true),
-                new CPMovement(new int[] { 1, 1 }, true),
-                new CPMovement(new int[] { -1, -1 }, true),
-                new CPMovement(new int[] { 0, 1 }, true),
-                new CPMovement(new int[] { 0, -1 }, true),
-                new CPMovement(new int[] { 1, 0 }, true),
-                new CPMovement(new int[] { -1, 0 }, true)
+                new CPMovement(new int[] { 1, -1 }, false),
+                new CPMovement(new int[] { -1, 1 }, false),
+                new CPMovement(new int[] { 1, 1 }, false),
+                new CPMovement(new int[] { -1, -1 }, false),
+                new CPMovement(new int[] { 0, 1 }, false),
+                new CPMovement(new int[] { 0, -1 }, false),
+                new CPMovement(new int[] { 1, 0 }, false),
+                new CPMovement(new int[] { -1, 0 }, false)
             };
 
             pieces.Add(new ChessPiece(Enum.PieceType.King, new int[] { 0, 3 }, kingMovements, Enum.Orientation.Straight));
@@ -86,7 +86,11 @@ namespace ChessMaster.GameRules.CheatChess
                 new CPMovement(new int[] { 1, -1 }, true),
                 new CPMovement(new int[] { -1, 1 }, true),
                 new CPMovement(new int[] { 1, 1 }, true),
-                new CPMovement(new int[] { -1, -1 }, true)
+                new CPMovement(new int[] { -1, -1 }, true),
+                new CPMovement(new int[] { 0, 1 }, true),
+                new CPMovement(new int[] { 0, -1 }, true),
+                new CPMovement(new int[] { 1, 0 }, true),
+                new CPMovement(new int[] { -1, 0 }, true)
             };
             
             pieces.Add(new ChessPiece(Enum.PieceType.Queen, new int[] { 0, 4 }, queenMovements, Enum.Orientation.Straight));            
